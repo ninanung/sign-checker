@@ -1,0 +1,14 @@
+{
+  "name": "sign-checker",
+  "version": "1.0.0",
+  "description": "checking tools for someone who make sign-up function",
+  "main": "check.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "checker"
+  ],
+  "author": "SeungJe Jun",
+  "license": "ISC"
+}
