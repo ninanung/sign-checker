@@ -24,13 +24,17 @@ if(checkResult) {
 ```  
 
 ## Functions  
-- checkLongerThan: param(string, number) 
-- checkShorterThan: param(string, number) 
-- checkBetween: param(string, small, big) 
-- checkLetters: param(string, letters) 
-- checkNumber: param(string) 
-- checkWhiteSpace: param(string) 
-- checkKorean: param(string) 
-- checkLowerCase: param(string) 
-- checkUpperCase: param(string) 
-- checkSpecial: param(string) 
+- checkLongerThan: param(string, number) : Check if 'string' param's length is longer than 'number' param.
+- checkShorterThan: param(string, number) : Check if 'string' param's length is shorter than 'number' param.
+- checkBetween: param(string, small, big) : Check if 'string' param's length is longer thant 'small' and shorter than 'big'.
+- checkLetters: param(string, letters[]) : Check if 'string' param have letters in 'letters' param.
+- checkNumber: param(string) : Check if 'string' param have number letters.
+- checkWhiteSpace: param(string) : Check if 'string' param have white space.
+- checkKorean: param(string) : Check if 'string' param have Korean letters.
+- checkLowerCase: param(string) : Check if 'string' param have lowercase(English) letters.
+- checkUpperCase: param(string) : Check if 'string' param have uppercase(English) letters.
+- checkSpecial: param(string) : Check if 'string' param have special letters.
+- checkUpperSpecialNumber: param(string) : Check if 'string' param have uppercase, special, number letters. You can use this function for checking complicate account password.
+
+## License  
+[MIT](LICENSE)
