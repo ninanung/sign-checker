@@ -1,13 +1,17 @@
 {
   "name": "sign-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "checking tools for someone who make sign-up function",
   "main": "check.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "checker", "sign up", "signup", "check", "password"
+    "checker",
+    "sign up",
+    "signup",
+    "check",
+    "password"
   ],
   "author": "seungje.jun <ninanung0503@gmail.com> (https://github.com/ninanung)",
   "license": "ISC"
