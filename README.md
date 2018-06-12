@@ -1,5 +1,7 @@
 # sign-checker
 
+## v1.0.2
+
 ## Why did i make this  
 I'm sick of making same 'checker' for every project. So, i will deploy this and use it for my project when i need signup and signin function.  
 
