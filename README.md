@@ -28,7 +28,7 @@ if(checkResult) {
 ## Functions  
 - checkLongerThan: param(string, number) : Check if 'string' param's length is longer than 'number' param.
 - checkShorterThan: param(string, number) : Check if 'string' param's length is shorter than 'number' param.
-- checkBetween: param(string, small, big) : Check if 'string' param's length is longer thant 'small' and shorter than 'big'.
+- checkBetween: param(string, small, big) : Check if 'string' param's length is longer than 'small' and shorter than 'big'.
 - checkLetters: param(string, letters[]) : Check if 'string' param have letters in 'letters' param.
 - checkNumber: param(string) : Check if 'string' param have number letters.
 - checkWhiteSpace: param(string) : Check if 'string' param have white space.
