@@ -1,7 +1,6 @@
 # sign-checker
 [![npm](https://img.shields.io/badge/npm-v1.0.3-blue.svg)](https://www.npmjs.com/package/sign-checker) 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ninanung/sign-checker/blob/master/LICENSE)
-## v1.0.2
 
 ## Why did i make this  
 I'm sick of making same 'checker' for every project. So, i will deploy this and use it for my project when i need signup and signin function.  
