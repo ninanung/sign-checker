@@ -38,18 +38,16 @@ function checkBetween (string: string, small: number, big: number): boolean {
 /** Check if string have letters of array.   
 * @param {string} string The string that user want to check.
 * @param {RegExp[]} letters The array of RegExp that user want to check.
-* @return {boolean[]} Return bool about each element of array if string have it. 
+* @return {number[]} Return array of index that matched with string.
 */
-function checkLetters (string: string, letters: RegExp[]): boolean[] {
-let boolArray: boolean[] = [];
-for(let i = 0; i < letters.length; i++) {
-    if(letters[i].test(string)) {
-        boolArray.push(true);
-    } else {
-        boolArray.push(false);
+function checkLetters (string: string, letters: RegExp[]): number[] {
+const matchedArray: number[] = [];
+    for(let i = 0; i < letters.length; i++) {
+        if(letters[i].test(string)) {
+            matchedArray.push(i);
+        }
     }
-}
-return boolArray;
+    return matchedArray;
 }
 /** Check if string have the number.
 * @param {string} string The string that user want to check.
@@ -71,8 +69,7 @@ function checkWhiteSpace (string: string): boolean {
 const white: RegExp = /\s/;
     if(white.test(string)) {
         return true;
-}
-else {
+    } else {
         return false;
     }
 }
