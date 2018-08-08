@@ -26,17 +26,17 @@ if(checkResult) {
 ```  
 
 ## Functions  
-- checkLongerThan: param(string, number) : Check if 'string' param's length is longer than 'number' param.
-- checkShorterThan: param(string, number) : Check if 'string' param's length is shorter than 'number' param.
-- checkBetween: param(string, small, big) : Check if 'string' param's length is longer than 'small' and shorter than 'big'.
-- checkLetters: param(string, letters[]) : Check if 'string' param have letters(RegExp) in 'letters' param.
-- checkNumber: param(string) : Check if 'string' param have number letters.
-- checkWhiteSpace: param(string) : Check if 'string' param have white space.
-- checkKorean: param(string) : Check if 'string' param have Korean letters.
-- checkLowerCase: param(string) : Check if 'string' param have lowercase(English) letters.
-- checkUpperCase: param(string) : Check if 'string' param have uppercase(English) letters.
-- checkSpecial: param(string) : Check if 'string' param have special letters.
-- checkUpperSpecialNumber: param(string) : Check if 'string' param have uppercase, special, number letters. You can use this function for checking complicate account password.
+- __checkLongerThan: param(string, number)__ : Check if 'string' param's length is longer than 'number' param. Return boolean.
+- __checkShorterThan: param(string, number)__ : Check if 'string' param's length is shorter than 'number' param. Return boolean.
+- __checkBetween: param(string, small, big)__ : Check if 'string' param's length is longer than 'small' and shorter than 'big'. Return boolean.
+- __checkLetters: param(string, letters[])__ : Check if 'string' param have letters(RegExp) in 'letters' param. Return array of index that matched with string.
+- __checkNumber: param(string)__ : Check if 'string' param have number letters. Return boolean.
+- __checkWhiteSpace: param(string)__ : Check if 'string' param have white space. Return boolean.
+- __checkKorean: param(string)__ : Check if 'string' param have Korean letters. Return boolean.
+- __checkLowerCase: param(string)__ : Check if 'string' param have lowercase(English) letters. Return boolean.
+- __checkUpperCase: param(string)__ : Check if 'string' param have uppercase(English) letters. Return boolean.
+- __checkSpecial: param(string)__ : Check if 'string' param have special letters. Return boolean.
+- __checkUpperSpecialNumber: param(string)__ : Check if 'string' param have uppercase, special, number letters. You can use this function for checking complicate account password. Return boolean.
 
 ## License  
 [MIT](LICENSE)
