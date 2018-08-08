@@ -1,6 +1,6 @@
 {
   "name": "sign-checker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "checking tools for someone who make sign-up function",
   "main": "check.js",
   "scripts": {
