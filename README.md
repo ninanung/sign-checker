@@ -1,5 +1,5 @@
 # sign-checker
-[![npm](https://img.shields.io/badge/npm-v1.0.4-blue.svg)](https://www.npmjs.com/package/sign-checker) 
+[![npm](https://img.shields.io/badge/npm-v1.0.5-blue.svg)](https://www.npmjs.com/package/sign-checker) 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ninanung/sign-checker/blob/master/LICENSE)
 
 ## Why did i make this  
