@@ -1,5 +1,5 @@
 # sign-checker
-[![npm](https://img.shields.io/badge/npm-v1.0.5-blue.svg)](https://www.npmjs.com/package/sign-checker) 
+[![npm](https://img.shields.io/badge/npm-v1.0.6-blue.svg)](https://www.npmjs.com/package/sign-checker) 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ninanung/sign-checker/blob/master/LICENSE)
 
 ## Why did i make this  
@@ -13,11 +13,15 @@ npm install --save sign-checker
 ```  
 
 ## How to use  
+
 ```javascript
-import checker from 'sign-checker';
+// using ES6 modules
+import { someFunction } from 'sign-checker';
+// using CommonJS modules
+const someFunction = require('sign-checker').someFunction
 
 const someString = "someStringThatIWantToCheck";
-const checkResult = checker.someFunction(someString);
+const checkResult = someFunction(someString);
 if(checkResult) {
     doingSomething();
 } else {
