@@ -142,6 +142,21 @@ function checkSpecial(string) {
     }
 }
 exports.checkSpecial = checkSpecial;
+/** Check if string only made with English, number and special letters.
+* @param {string} string The string that user want to check.
+* @return {boolean} If string have other language letter, return false.
+*/
+function checkLanuageEnglish(string) {
+    var isTrue = true;
+    for (var i = 0; i < string.length; i++) {
+        var letter = string[i];
+        if (!this.checkNumber(letter) && !this.checkSpecial(letter) && !this.checkUpperCase(letter) && !this.checkLowerCase(letter)) {
+            isTrue = false;
+        }
+    }
+    return isTrue;
+}
+exports.checkLanuageEnglish = checkLanuageEnglish;
 /** Check if string have uppercase letter, number and special letter. For complicate password check.
 * @param {string} string The string that user want to check.
 * @return {boolean} If string have all the letters, return true.

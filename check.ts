@@ -41,7 +41,7 @@ function checkBetween (string: string, small: number, big: number): boolean {
 * @return {number[]} Return array of index that matched with string.
 */
 function checkLetters (string: string, letters: RegExp[]): number[] {
-const matchedArray: number[] = [];
+    const matchedArray: number[] = [];
     for(let i = 0; i < letters.length; i++) {
         if(letters[i].test(string)) {
             matchedArray.push(i);
@@ -54,7 +54,7 @@ const matchedArray: number[] = [];
 * @return {boolean} If string have the number, return true.
 */
 function checkNumber (string: string): boolean {
-const number: RegExp = /[0-9]/;
+    const number: RegExp = /[0-9]/;
     if(number.test(string)) {
         return true;
     } else {
@@ -66,7 +66,7 @@ const number: RegExp = /[0-9]/;
 * @return {boolean} If string have the whitespace, return true.
 */
 function checkWhiteSpace (string: string): boolean {
-const white: RegExp = /\s/;
+    const white: RegExp = /\s/;
     if(white.test(string)) {
         return true;
     } else {
@@ -78,7 +78,7 @@ const white: RegExp = /\s/;
 * @return {boolean} If string have the Korean letter, return true.
 */
 function checkKorean (string): boolean {
-const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+    const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
     if(korean.test(string)) {
         return true;
     } else {
@@ -90,7 +90,7 @@ const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 * @return {boolean} If string have the lowercase letter., return true.
 */
 function checkLowerCase (string: string): boolean {
-const lower: RegExp = /[a-z]/;
+    const lower: RegExp = /[a-z]/;
     if(lower.test(string)) {
         return true;
     } else {
@@ -102,7 +102,7 @@ const lower: RegExp = /[a-z]/;
 * @return {boolean} If string have the uppercase letter, return true.
 */
 function checkUpperCase (string: string): boolean {
-const upper: RegExp = /[A-Z]/;
+    const upper: RegExp = /[A-Z]/;
     if(upper.test(string)) {
         return true;
     } else {
@@ -114,13 +114,28 @@ const upper: RegExp = /[A-Z]/;
 * @return {boolean} If string have the special letter, return true.
 */
 function checkSpecial (string: string): boolean {
-const special: RegExp = /[!@#$%^&*()\-_=+\\\/\[\]{};:\'",.<>\/?|`~]/;
+    const special: RegExp = /[!@#$%^&*()\-_=+\\\/\[\]{};:\'",.<>\/?|`~]/;
     if(special.test(string)) {
         return true;
     } else {
         return false;
     }
 }
+/** Check if string only made with English, number and special letters.  
+* @param {string} string The string that user want to check.
+* @return {boolean} If string have other language letter, return false.
+*/
+function checkLanuageEnglish (string: string): boolean {
+    let isTrue: boolean = true;
+    for(let i = 0; i < string.length; i++) {
+        const letter: string = string[i];
+        if(!this.checkNumber(letter) && !this.checkSpecial(letter) && !this.checkUpperCase(letter) && !this.checkLowerCase(letter)) {
+            isTrue = false;
+        }
+    }
+    return isTrue;
+}
+
 /** Check if string have uppercase letter, number and special letter. For complicate password check.
 * @param {string} string The string that user want to check.
 * @return {boolean} If string have all the letters, return true.
@@ -144,5 +159,6 @@ checkShorterThan,
 checkSpecial,
 checkUpperCase,
 checkUpperSpecialNumber,
+checkLanuageEnglish,
 checkWhiteSpace
 }
