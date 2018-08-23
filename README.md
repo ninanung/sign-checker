@@ -1,5 +1,5 @@
 # sign-checker
-[![npm](https://img.shields.io/badge/npm-v1.0.6-blue.svg)](https://www.npmjs.com/package/sign-checker) 
+[![npm](https://img.shields.io/badge/npm-v1.0.7-blue.svg)](https://www.npmjs.com/package/sign-checker) 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ninanung/sign-checker/blob/master/LICENSE)
 
 ## Why did i make this  
@@ -40,6 +40,7 @@ if(checkResult) {
 - __checkLowerCase: param(string)__ : Check if 'string' param have lowercase(English) letters. Return boolean.
 - __checkUpperCase: param(string)__ : Check if 'string' param have uppercase(English) letters. Return boolean.
 - __checkSpecial: param(string)__ : Check if 'string' param have special letters. Return boolean.
+- __checkLanuageEnglish: param(string)__ : Check if 'string' made with English, but allow number, special letters, white space. Only check about language.
 - __checkUpperSpecialNumber: param(string)__ : Check if 'string' param have uppercase, special, number letters. You can use this function for checking complicate account password. Return boolean.
 
 ## License  
