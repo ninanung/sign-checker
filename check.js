@@ -146,7 +146,7 @@ exports.checkSpecial = checkSpecial;
 * @param {string} string The string that user want to check.
 * @return {boolean} If string have other language letter, return false.
 */
-function checkLanuageEnglish(string) {
+function checkLanguageEnglish(string) {
     var isTrue = true;
     for (var i = 0; i < string.length; i++) {
         var letter = string[i];
@@ -156,7 +156,7 @@ function checkLanuageEnglish(string) {
     }
     return isTrue;
 }
-exports.checkLanuageEnglish = checkLanuageEnglish;
+exports.checkLanguageEnglish = checkLanguageEnglish;
 /** Check if string have uppercase letter, number and special letter. For complicate password check.
 * @param {string} string The string that user want to check.
 * @return {boolean} If string have all the letters, return true.

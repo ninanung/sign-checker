@@ -125,7 +125,7 @@ function checkSpecial (string: string): boolean {
 * @param {string} string The string that user want to check.
 * @return {boolean} If string have other language letter, return false.
 */
-function checkLanuageEnglish (string: string): boolean {
+function checkLanguageEnglish (string: string): boolean {
     let isTrue: boolean = true;
     for(let i = 0; i < string.length; i++) {
         const letter: string = string[i];
@@ -159,6 +159,6 @@ checkShorterThan,
 checkSpecial,
 checkUpperCase,
 checkUpperSpecialNumber,
-checkLanuageEnglish,
+checkLanguageEnglish,
 checkWhiteSpace
 }
