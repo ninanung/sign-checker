@@ -150,7 +150,7 @@ function checkLanuageEnglish(string) {
     var isTrue = true;
     for (var i = 0; i < string.length; i++) {
         var letter = string[i];
-        if (!this.checkNumber(letter) && !this.checkSpecial(letter) && !this.checkUpperCase(letter) && !this.checkLowerCase(letter)) {
+        if (!checkNumber(letter) && !checkSpecial(letter) && !checkUpperCase(letter) && !checkLowerCase(letter)) {
             isTrue = false;
         }
     }
@@ -162,7 +162,7 @@ exports.checkLanuageEnglish = checkLanuageEnglish;
 * @return {boolean} If string have all the letters, return true.
 */
 function checkUpperSpecialNumber(string) {
-    if (this.checkSpecial(string) && this.checkUpperCase(string) && this.checkNumber(string)) {
+    if (checkSpecial(string) && checkUpperCase(string) && checkNumber(string)) {
         return true;
     }
     else {

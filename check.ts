@@ -129,7 +129,7 @@ function checkLanuageEnglish (string: string): boolean {
     let isTrue: boolean = true;
     for(let i = 0; i < string.length; i++) {
         const letter: string = string[i];
-        if(!this.checkNumber(letter) && !this.checkSpecial(letter) && !this.checkUpperCase(letter) && !this.checkLowerCase(letter)) {
+        if(!checkNumber(letter) && !checkSpecial(letter) && !checkUpperCase(letter) && !checkLowerCase(letter)) {
             isTrue = false;
         }
     }
@@ -141,7 +141,7 @@ function checkLanuageEnglish (string: string): boolean {
 * @return {boolean} If string have all the letters, return true.
 */
 function checkUpperSpecialNumber (string: string): boolean {
-    if(this.checkSpecial(string) && this.checkUpperCase(string) && this.checkNumber(string)) {
+    if(checkSpecial(string) && checkUpperCase(string) && checkNumber(string)) {
         return true;
     } else {
         return false;
